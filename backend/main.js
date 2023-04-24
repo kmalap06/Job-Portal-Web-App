@@ -2,6 +2,10 @@
 require("dotenv").config();
 require("colors");
 const express = require("express");
+const { dbConnect } = require("./config/dbConnect");
+
+// Database Connection
+dbConnect();
 
 // Initializing Variables
 const PORT = process.env.PORT;
