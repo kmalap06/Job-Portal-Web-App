@@ -1,17 +1,25 @@
 {
-  "name": "job-portal-api",
-  "version": "1.0.0",
-  "description": "Backend for Job Portal Web Application (MERN Stack)",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "job",
-    "portal",
-    "mern",
-    "stack"
-  ],
-  "author": "Kedar Malap",
-  "license": "MIT"
+    "name": "job-portal-api",
+    "version": "1.0.0",
+    "description": "Backend for Job Portal Web Application (MERN Stack)",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node main.js",
+        "dev": "nodemon main.js"
+    },
+    "keywords": [
+        "job",
+        "portal",
+        "mern",
+        "stack"
+    ],
+    "author": "Kedar Malap",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
 }
