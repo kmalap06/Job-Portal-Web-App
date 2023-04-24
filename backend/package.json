@@ -1,0 +1,17 @@
+{
+  "name": "job-portal-api",
+  "version": "1.0.0",
+  "description": "Backend for Job Portal Web Application (MERN Stack)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "job",
+    "portal",
+    "mern",
+    "stack"
+  ],
+  "author": "Kedar Malap",
+  "license": "MIT"
+}
