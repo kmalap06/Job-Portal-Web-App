@@ -1,5 +1,10 @@
 // Importing Packages
+require("dotenv").config();
+require("colors");
 const express = require("express");
+
+// Initializing Variables
+const PORT = process.env.PORT;
 
 // REST Object
 const app = express();
@@ -10,4 +15,8 @@ app.get("/", (req, res) => {
 });
 
 // Intializing Server
-app.listen(8080, (req, res) => console.log(`Server Connected!`));
+app.listen(PORT, (req, res) =>
+    console.log(
+        `Server Running In ${process.env.DEV_MODE} At Port ${PORT}`.white
+    )
+);
