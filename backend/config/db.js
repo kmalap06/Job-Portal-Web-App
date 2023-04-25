@@ -1,5 +1,7 @@
+// Importing Package
 const mongoose = require("mongoose");
 
+// Database Connection Function
 const dbConnect = async () => {
     try {
         const MONGO_URL = process.env.MONGO_URL;
@@ -10,4 +12,5 @@ const dbConnect = async () => {
     }
 };
 
+// Exporting Functions
 module.exports = { dbConnect };
