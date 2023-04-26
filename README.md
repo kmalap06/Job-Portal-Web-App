@@ -1,6 +1,6 @@
 # MERN Stack Job Portal Web Application
 
-**Add ".env" in the backend folder which consist of following variables:**
+**Add ".env" In The Backend Folder Which Contains Following Variables:**
 
 ```
 PORT = "PORT_NUMBER"
@@ -8,9 +8,6 @@ DEV_MODE = "(PRODUCTION / DEVELOPMENT)"
 USERNAME = "MONGODB_USERNAME_ACCESS"
 PASSWORD = "USER_ACCESS PASSWORD"
 MONGO_URL = "MONGO URL"
-
-
-<!-- Point To Be Remembered -->
-NOTE: DON'T FORGET TO CHANGE THE USERNAME AND PASSWORD IN MONGO URL OTHERWISE IT WILL HAVE "BAD AUTHENTICATION ERROR".
-
 ```
+
+Note: Don't Forget To Change The Username And Password In Mongo Url Otherwise It Can Cause "Bad Authentication Error".
