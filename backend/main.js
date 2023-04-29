@@ -1,6 +1,7 @@
 // Importing Packages
 require("dotenv").config();
 require("colors");
+require("express-async-errors");
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
@@ -9,6 +10,7 @@ const morgan = require("morgan");
 const { dbConnect } = require("./config/db");
 const { testRoute } = require("./routes/testRoutes");
 const { authRoute } = require("./routes/authRoutes");
+const { errorMiddleware } = require("./middlewares/errorMiddleware");
 
 // Database Connection
 dbConnect();
@@ -27,6 +29,9 @@ app.use(morgan("dev"));
 // Routes
 app.use("/api/v1/test", testRoute);
 app.use("/api/v1/auth", authRoute);
+
+// Validation Middleware
+app.use(errorMiddleware);
 
 // Intializing Server
 app.listen(PORT, (req, res) =>
