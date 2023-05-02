@@ -21,6 +21,7 @@ DEV_MODE = "(PRODUCTION / DEVELOPMENT)"
 USERNAME = "MONGODB_USERNAME_ACCESS"
 PASSWORD = "USER_ACCESS PASSWORD"
 MONGO_URL = "MONGO URL"
+JWT_SECRET_KEY = "CREATE YOUR OWN SECRET KEY"
 ```
 
 Note: Don't Forget To Change The Username And Password In Mongo Url Otherwise It Can Cause "Bad Authentication Error".
